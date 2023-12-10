@@ -1,6 +1,6 @@
 <template lang="pug">
 .listing
-    h1 asd
+    h1 MEM2
     .listing-wrapper
         .work.in
             span(@click="workOpen=!workOpen") work
@@ -8,7 +8,7 @@
                 .public.inner
                     span(@click="publicOpen=!publicOpen") public
                     .links(v-show="publicOpen")
-                        router-link(:to="{name: 'work-public-slug' }" :style="{textDecoration: workOpen ? 'underline' : 'initial'}") text
+                        router-link(:to="{name: 'work-public-slug', params:{slug: 'asd'} }" :style="{textDecoration: workOpen ? 'underline' : 'initial'}") text
                         a text
                         a text
                         a text
@@ -50,11 +50,6 @@ export default {
             studioOpen: false,
         }
     },
-    methods: {
-        routeee(){
-            this.$router.push({name: 'work-public-slug', params:{slug:'asd'}})
-        }
-    }
 }
 </script>
 
