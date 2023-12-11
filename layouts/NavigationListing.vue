@@ -8,7 +8,7 @@
                 .public.inner
                     span(@click="publicOpen=!publicOpen") public
                     .links(v-show="publicOpen")
-                        router-link(:to="{name: 'work-public-slug', params:{slug: 'asd'} }" :style="{textDecoration: workOpen ? 'underline' : 'initial'}") text
+                        router-link(:to="{name: 'work-public-slug', params:{slug: 'rectangle'} }" :style="{textDecoration: workOpen ? 'underline' : 'initial'}") text
                         a text
                         a text
                         a text
