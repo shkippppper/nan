@@ -11,6 +11,19 @@ export default {
         return{
             testImage: testImage
         }
+    },
+    mounted() {
+
+        let formData = {
+            a : 'aaa'
+        }
+        fetch("https://mem2-f7aea-default-rtdb.europe-west1.firebasedatabase.app/memdata", {
+            method: "POST",
+            headers: {
+                'Content-type' : 'application/json'
+            },
+            body: formData,
+        });
     }
 }
 </script>
